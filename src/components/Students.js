@@ -1,28 +1,33 @@
 import React, { Component } from 'react'
 import { Card,Button } from 'react-bootstrap';
+import s1 from './s1.png'
+import s2 from './s2.png'
+import s3 from './s3.png'
+import s4 from './s4.png'
+
 class Students extends Component {
     cardInfo = [
         {
           image:
-            "s1.png",
+            s1,
           name: "Mike",
           gpa: 3.8
         },
         {
           image:
-            "s2.png",
+            s2,
             name: "Manal",
             gpa: 3.6
         },
         {
           image:
-            "s3.png",
+            s3,
             name: "Moe",
             gpa: 3.2
         },
         {
           image:
-            "s4.png",
+            s4,
             name: "Mary",
             gpa: 2.6
         }
