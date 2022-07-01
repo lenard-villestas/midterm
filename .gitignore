@@ -24,3 +24,5 @@ yarn-error.log*
 
 junk.txt
 junk2.txt
+
+src/components/*.png
