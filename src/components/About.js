@@ -5,7 +5,7 @@ function About () {
         <h2>This is my midterm assignment!</h2>
  
         Check out this puppy :
-        <a href="https://www.four-paws.org/our-stories/publications-guides/10-tips-to-recognise-a-responsible-puppy-seller">
+        <a href="https://dogtime.com/assets/uploads/2011/03/puppy-development.jpg" target="_blank">
             Cute Puppy
         </a>
     </div>
