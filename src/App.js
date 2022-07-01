@@ -9,6 +9,7 @@ import {
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Students from './components/Students';
 
 function App() {
   return (
@@ -24,11 +25,16 @@ function App() {
           <li>
             <Link to="/About">About</Link>
           </li>
+          <li>
+            <Link to="/Students">Students</Link>
+          </li>
         </ul>
         <Routes>
           <Route exact path='/Home' element={<Home/>}></Route>
-          <Route exact path='/about' element={<About/>}></Route>
-          <Route exact path='/contact' element={<Contact/>}></Route>
+          <Route exact path='/About' element={<About/>}></Route>
+          <Route exact path='/Contact' element={<Contact/>}></Route>
+          <Route exact path='/Students' element={<Students/>}></Route>
+
         </Routes>
       </div>
     </Router>
