@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import { Card } from 'react-bootstrap';
-
+import { Card,Button } from 'react-bootstrap';
 class Students extends Component {
-  render() {
-    const cardInfo = [
+    cardInfo = [
         {
           image:
             "s1.png",
@@ -29,10 +27,23 @@ class Students extends Component {
             gpa: 2.6
         }
       ];
+  render() {
+    
     
     return (
-      <div>
-        
+      <div className='cardlist'>
+        {this.cardInfo.map(card => 
+        <Card className='card'>
+            <Card.Img variant='top' src={card.image}/>
+            <Card.Body>
+                
+                <Card.Title>Name: {card.name}</Card.Title>
+                <Card.Subtitle>GPA: {card.gpa}</Card.Subtitle>
+                <Card.Text>{card.name} is a student of SAIT. Taking the Information Technology Program.</Card.Text>
+                <Button variant='primary'>Update Grade</Button>
+            </Card.Body>
+        </Card>
+            )}
       </div>
     )
   }
